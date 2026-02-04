@@ -49,23 +49,14 @@ The system combines the generative power of **Google Gemini 1.5** with a local v
 
 
 | Category | Technology |
-
-|----------|------------|
-
+| :--- | :--- |
 | **Language** | Python 3.11 |
-
 | **Backend API** | FastAPI |
-
 | **Telegram Interface** | Aiogram 3.x |
-
 | **AI Framework** | LangChain |
-
 | **LLM** | Google Gemini API |
-
 | **Vector Database** | ChromaDB |
-
 | **DevOps** | Docker, Docker Compose |
-
 
 
 ---
@@ -129,17 +120,16 @@ docker-compose up --build
 
 ## 📂 Project Structure
 
-├── bot_telegram.py  = Telegram bot frontend (Aiogram)
+```text
+.
+├── bot_telegram.py      # Telegram bot frontend (Aiogram)
+├── ingest.py            # Backend API & RAG Logic (FastAPI)
+├── Dockerfile           # Image configuration
+├── docker-compose.yml   # Services orchestration
+├── requirements.txt     # Dependencies
+└── embeddings_med/      # Pre-computed vector database
 
-├── ingest.py   = Backend API & RAG Logic (FastAPI)
-
-├── Dockerfile  -  Image configuration
-
-├── docker-compose.yml  -  Services orchestration
-
-├── requirements.txt  -   Dependencies
-
-└── embeddings_med -  Pre-computed vector database
+``` 
 
 ## ⚠️ Disclaimer
 
