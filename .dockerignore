@@ -1,0 +1,18 @@
+# ignore venv
+.venv
+venv
+env
+
+# ignore cash python's
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+
+# ignore git
+.git
+.gitignore
+
+# ignore settings  VS Code
+.vscode
+.idea
